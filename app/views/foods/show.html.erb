@@ -1,0 +1,8 @@
+<h2> <%= @food.title %></h2>
+<p><%= @food.description %></p>
+<h2> <%= @food.price %></h2>
+
+<%= link_to "Back", root_path %>
+<%=link_to "Edit", edit_food_path(@food)  %>
+
+<%=link_to "Delete", food_path(@food), method: :delete, data: {confirm: "Are you sure?"}  %> 
